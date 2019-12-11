@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Marcafut</title>
+        <meta name="keywords" content="Marcafut futebol futevôlei futsal volei tenis " />
+        <meta name="description" content="Author - Marcafut">
+        <meta name="author" content="Marcafut">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Owl Carousel Assets -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css" />
+
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,500,700|Roboto:300,400,500,700,900|Ubuntu:300,300i,400,400i,500,500i,700" rel="stylesheet">
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/responsive.css" />
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+      <!--======= header =======-->
+      <header>
+        <div class="container-full">
+            <div w3-include-html="componentes/header.html"></div>
+        </div><!-- // container-full -->
+      </header><!-- // header -->
+
+      <div id="main-category">
+        <div class="container-full">
+            <div w3-include-html="componentes/menuTopo.html"></div>
+        </div><!-- // container-full -->
+      </div><!-- // main-category -->
+
+	  <div class="site-output">
+      	<div class="col-md-2 no-padding-left hidden-sm hidden-xs">
+            <div w3-include-html="componentes/menuLateral.html"></div>
+        </div><!-- // col-md-2 -->
+        <div id="all-output" class="col-md-10">
+            <div w3-include-html="componentes/conteudo.html"></div>
+        </div>
+      </div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.sticky-kit.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/grid-blog.min.js"></script>
+<!-- Script para importas as paginas -->
+<script>
+        function includeHTML() {
+          var z, i, elmnt, file, xhttp;
+          /* Loop through a collection of all HTML elements: */
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+              /* Make an HTTP request using the attribute value as the file name: */
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                  /* Remove the attribute, and call this function once more: */
+                  elmnt.removeAttribute("w3-include-html");
+                  includeHTML();
+                }
+              } 
+              xhttp.open("GET", file, true);
+              xhttp.send();
+              /* Exit the function: */
+              return;
+            }
+          }
+        }
+        </script>
+        <script>
+                includeHTML();
+                </script>
+	</body>
+</html>
