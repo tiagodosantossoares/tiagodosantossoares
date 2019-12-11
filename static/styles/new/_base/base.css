@@ -752,35 +752,35 @@
 
 @font-face {
     font-family: 'ppay-web';
-    src: local("x"), url("/static/styles/webfont/ppaythin.woff2") format("woff2"), url("/static/styles/webfont/ppaythin.woff") format("woff"), url("/static/styles/webfont/ppaythin.ttf") format("truetype"), url("/static/styles/webfont/ppaythin.svg#font") format("svg");
+    src: local("x"), url("./static/styles/webfont/ppaythin.woff2") format("woff2"), url("./static/styles/webfont/ppaythin.woff") format("woff"), url("./static/styles/webfont/ppaythin.ttf") format("truetype"), url("./static/styles/webfont/ppaythin.svg#font") format("svg");
     font-weight: 300;
     font-style: normal
 }
 
 @font-face {
     font-family: 'ppay-web';
-    src: local("x"), url("/static/styles/webfont/ppayreg.woff2") format("woff2"), url("/static/styles/webfont/ppayreg.woff") format("woff"), url("/static/styles/webfont/ppayreg.ttf") format("truetype"), url("/static/styles/webfont/ppayreg.svg#font") format("svg");
+    src: local("x"), url("./static/styles/webfont/ppayreg.woff2") format("woff2"), url("./static/styles/webfont/ppayreg.woff") format("woff"), url("./static/styles/webfont/ppayreg.ttf") format("truetype"), url("./static/styles/webfont/ppayreg.svg#font") format("svg");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: 'ppay-web';
-    src: local("x"), url("/static/styles/webfont/ppaybld.woff2") format("woff2"), url("/static/styles/webfont/ppaybld.woff") format("woff"), url("/static/styles/webfont/ppaybld.ttf") format("truetype"), url("/static/styles/webfont/ppaybld.svg#font") format("svg");
+    src: local("x"), url("./static/styles/webfont/ppaybld.woff2") format("woff2"), url("./static/styles/webfont/ppaybld.woff") format("woff"), url("./static/styles/webfont/ppaybld.ttf") format("truetype"), url("./static/styles/webfont/ppaybld.svg#font") format("svg");
     font-weight: 700;
     font-style: normal
 }
 
 @font-face {
     font-family: 'ppay-web';
-    src: local("x"), url("/static/styles/webfont/ppayxbd.woff2") format("woff2"), url("/static/styles/webfont/ppayxbd.woff") format("woff"), url("/static/styles/webfont/ppayxbd.ttf") format("truetype"), url("/static/styles/webfont/ppayxbd.svg#font") format("svg");
+    src: local("x"), url("./static/styles/webfont/ppayxbd.woff2") format("woff2"), url("./static/styles/webfont/ppayxbd.woff") format("woff"), url("./static/styles/webfont/ppayxbd.ttf") format("truetype"), url("./static/styles/webfont/ppayxbd.svg#font") format("svg");
     font-weight: 800;
     font-style: normal
 }
 
 @font-face {
     font-family: 'ppay-web';
-    src: local("x"), url("/static/styles/webfont/ppayblk.woff2") format("woff2"), url("/static/styles/webfont/ppayblk.woff") format("woff"), url("/static/styles/webfont/ppayblk.ttf") format("truetype"), url("/static/styles/webfont/ppayblk.svg#font") format("svg");
+    src: local("x"), url("./static/styles/webfont/ppayblk.woff2") format("woff2"), url("./static/styles/webfont/ppayblk.woff") format("woff"), url("./static/styles/webfont/ppayblk.ttf") format("truetype"), url("./static/styles/webfont/ppayblk.svg#font") format("svg");
     font-weight: 900;
     font-style: normal
 }
