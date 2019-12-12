@@ -1,0 +1,84 @@
+<div class="container ">
+        <div class="bs-docs-section margin-register">
+          <h1 id="forms" class="page-header" >Cadastre-se</h1>
+          <div class="hr"><span class="hr-inner"></span></div>
+        </div>
+        <div class="container paddingBottom">
+          <form class="pure-form pure-form-stacked" method="post">
+            <input type="hidden" name="csrfmiddlewaretoken" value="tUC9D1Rs8qU0CflNUY3oRUwLmxrgZkT1IXBCsKZfH1bYKHcFVvkAajRwinC3EYPj">
+            
+      
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <!-- <label>Nome Completo *</label> -->
+                  <!-- <input type="text" class="form-control" id="name" name="name" placeholder="Nome de Completo*"> -->
+                  <label for="id_name">Nome Completo:</label>
+                  <input type="text" name="name" class="form-control" placeholder="Nome completo" maxlength="100" required="" id="id_name">
+                  
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="id_email">E-mail:</label>
+                  <input type="email" name="email" class="form-control" placeholder="Email" maxlength="254" required="" id="id_email">
+                  
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="id_cpfCnpj">CPF:</label>
+                  <input type="text" name="cpfCnpj" class="form-control cpfCnpj" placeholder="Informe o CPF somente os numeros" maxlength="14" id="id_cpfCnpj">
+                  
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="id_celular">Celular:</label>
+                  <input type="text" name="celular" class="form-control celular" placeholder="Informe somente os números" maxlength="16" required="" id="id_celular">
+                  
+                </div>
+              </div>
+            </div>
+      
+            <hr>
+      
+            <h4 class="titulo" > DADOS DE ACESSO</h4>
+            <br>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="id_username">Nome de Usuário:</label>
+                  <input type="text" name="username" class="form-control" placeholder="Usuário ou Email" maxlength="30" required="" id="id_username">
+                  
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="id_password1">Senha:</label>
+                  <input type="password" name="password1" class="form-control" required="" id="id_password1">
+                  
+                </div>
+              </div>
+      
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="id_password2">Confirmação de Senha:</label>
+                  <input type="password" name="password2" class="form-control" required="" id="id_password2">
+                  
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div align="right">
+              <p>
+                <input required="" type="checkbox" id="conduso" name="conduso"> Li e aceito o <a href="/staticfiles/termodeuso.html" target="_blank">Termo de Condição de Uso.</a>
+                
+              </p>
+            </div>
+      
+            <button type="submit" class="btn btn-primary" id="submit" name="submit" onclick="return validar()">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+      <br>

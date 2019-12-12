@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MarcaFut. </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="MarcaFut é o jeito mais fácil de enviar e receber dinheiro">
+    <meta name="keywords" content="Marcafut futebol futevôlei futsal volei tenis " />
+        <meta name="description" content="Author - Marcafut">
+        <meta name="author" content="Marcafut">
+        
+    <meta name="viewport" content="width=375, initial=scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi">
+    <meta property="og:title" content="Pague tudo com seu MarcaFut.">
+    <meta property="og:description" content="MarcaFut é o jeito mais fácil de enviar e receber dinheiro">
+    <meta property="og:image" content="./static/images/p2p-og-image.jpg">
+    <link href="template/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./static/images/marcafut/marcafut.png">
+    <link rel="canonical" href="https://www.marcafut.com/site">
+    <link rel="stylesheet" href="./static/styles/base.css">
+    <link rel="stylesheet" href="./static/styles/new/home/home.css">
+    
+</head>
+
+<body>
+    <header id="header" class="" w3-include-html="components/header.html"></header>
+    <div w3-include-html="components/login.html"></div>
+    
+    <div w3-include-html="components/footer.html"></div>
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
+                }
+            }
+        }
+    </script>
+    <script src="template/js/jquery-3.2.1.min.js"></script>
+<script>
+        includeHTML();
+        window.onload = function() {
+            setTimeout(function(){
+                document.getElementById('enable-menu').addEventListener('click', function() {
+                document.getElementById('mobile-dropdown').classList.toggle('open');
+            });
+            },1000)
+            
+        }
+        </script>
+</html>
