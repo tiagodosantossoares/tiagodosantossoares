@@ -1,49 +1,6 @@
 
 <style type="text/css">
-    @font-face {
-      font-family: 'ppay-web';
-      src: local("x"), url("./static/styles/webfont/ppaythin.woff2") format("woff2"), url("./static/styles/webfont/ppaythin.woff") format("woff"), url("./static/styles/webfont/ppaythin.ttf") format("truetype"), url("./static/styles/webfont/ppaythin.svg#font") format("svg");
-      font-weight: 300;
-      font-style: normal
-    }
-
-    @font-face {
-      font-family: 'ppay-web';
-      src: local("x"), url("./static/styles/webfont/ppayreg.woff2") format("woff2"), url("./static/styles/webfont/ppayreg.woff") format("woff"), url("./static/styles/webfont/ppayreg.ttf") format("truetype"), url("./static/styles/webfont/ppayreg.svg#font") format("svg");
-      font-weight: 400;
-      font-style: normal
-    }
-
-    @font-face {
-      font-family: 'ppay-web';
-      src: local("x"), url("./static/styles/webfont/ppaybld.woff2") format("woff2"), url("./static/styles/webfont/ppaybld.woff") format("woff"), url("./static/styles/webfont/ppaybld.ttf") format("truetype"), url("./static/styles/webfont/ppaybld.svg#font") format("svg");
-      font-weight: 700;
-      font-style: normal
-    }
-
-    @font-face {
-      font-family: 'ppay-web';
-      src: local("x"), url("./static/styles/webfont/ppayxbd.woff2") format("woff2"), url("./static/styles/webfont/ppayxbd.woff") format("woff"), url("./static/styles/webfont/ppayxbd.ttf") format("truetype"), url("./static/styles/webfont/ppayxbd.svg#font") format("svg");
-      font-weight: 800;
-      font-style: normal
-    }
-
-    @font-face {
-      font-family: 'ppay-web';
-      src: local("x"), url("./static/styles/webfont/ppayblk.woff2") format("woff2"), url("./static/styles/webfont/ppayblk.woff") format("woff"), url("./static/styles/webfont/ppayblk.ttf") format("truetype"), url("./static/styles/webfont/ppayblk.svg#font") format("svg");
-      font-weight: 900;
-      font-style: normal
-    }
-
-    html,
-    body {
-      margin: 0;
-      text-size-adjust: none;
-      -moz-text-size-adjust: none;
-      -webkit-text-size-adjust: none;
-      -webkit-font-smoothing: antialiased
-    }
-
+    
     html {
       font-family: 'ppay-web', sans-serif;
       background-color: #f0f6f8;
@@ -141,7 +98,7 @@
     @media (max-width: 680px) {
       h2 {
         font-size: 44px;
-        margin: 0 0 36px 0
+        margin: 0 0 10px 0
       }
 
       h3 {
@@ -444,8 +401,8 @@
 
     #downBody img {
       display: block;
-      width: 213px;
-      margin: 0 auto 48px auto
+      width: 150px;
+      /* margin: 0 auto 48px auto */
     }
 
     #downBody h2 {
@@ -496,7 +453,7 @@
     }
 
     #downBody .ppay {
-      float: left;
+      /* float: left; */
       border-right: 1px solid #e1e1e1
     }
 
@@ -530,7 +487,7 @@
 
     @media (max-width: 890px) {
       #downBody img {
-        width: 320px
+        width: 200px
       }
 
       #downBody p {
@@ -572,7 +529,7 @@
 
     @media (max-width: 680px) {
       #downBody img {
-        width: 380px
+        width: 200px
       }
 
       #downBody h4 {
@@ -611,7 +568,7 @@
       }
 
       #downBody img {
-        width: 426px
+        width: 200px
       }
     }
 
@@ -1745,6 +1702,10 @@
       height: auto;
       width: 100%
     }
+   .img-responsive-width {
+      height: auto;
+      width: 50%
+    }
 
     @media only screen and (max-width: 768px) {
       #footer-wrapper .container {
@@ -2169,11 +2130,11 @@
         
         <div class="wrapper">
     
-    
+    <center>
           <div class="container">
             <h2 class="in">Baixe agora o MarcaFut para o seu smartphone</h2>
             <div class="side ppay">
-            <div class="col-xs-12 col-md-3 col-md-offset-2 image-wrapper">
+            <div class="col-md-12  image-wrapper">
                 <div class="image-wrapper">
                   <img src="./static/images/download.png"  alt="Deixe a carteira em casa."
                          class="img-responsive-width">
@@ -2193,8 +2154,7 @@
               </div>
             </div>    
            
-            <div style="clear:both;"></div>
           </div>
-    
+        </center>
         </div>
       </section>
